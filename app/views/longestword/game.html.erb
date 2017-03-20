@@ -1,0 +1,31 @@
+
+<h1>Longestword#game</h1>
+
+<!-- <form action="/game">
+  <label for="grid">How many letters would you like to be in your grid?</label>
+  <input type="text" id="grid" name="query" placeholder="any number here ...">
+  <input type="submit" value="Generate grid">
+
+</form> -->
+
+
+<p> "******** Welcome to the longest word-game !********" </p>
+<p> "Here is your grid :" </p>
+<%= @grid %>
+
+<p> "*****************************************************" </p>
+
+<p> "What's your best shot ?" </p>
+
+
+<form action="/score">
+  <label for="word">Type in your word!</label>
+  <input type="text" id="word" name="attempt" placeholder="Your word here ... ">
+  <input type="submit" value="Let's play!">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="hidden" name="grid" value="<%= @grid %>">
+</form>
+
+
+
+
